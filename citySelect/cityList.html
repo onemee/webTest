@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>菜单联动</title>
+		<!--引入项目外部js文件-->
+		<script src="js/cityList.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cityData.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--定义省、市、县（区）下拉菜单-->
+		<div>
+			<label for="">你所在的地区：</label>
+			<select id="province"></select>
+			<select id="city"></select>
+			<select id="area"></select>
+		</div>
+		<!--定义JS函数加载数据-->
+		<script type="text/javascript">
+			addressInit('province', 'city', 'area');
+		</script>
+	</body>
+
+</html>
